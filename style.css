@@ -46,36 +46,38 @@ a{color:inherit;text-decoration:none;}
 /* ---------- header ---------- */
 header{
   position:sticky;top:0;z-index:50;
-  background:rgba(28,31,34,.96);
+  background:rgba(244,245,243,.97);
   backdrop-filter:blur(6px);
-  border-bottom:1px solid rgba(245,183,0,.25);
+  border-bottom:1px solid rgba(28,31,34,.08);
 }
 .nav{
   display:flex;align-items:center;justify-content:space-between;
-  padding:16px 28px;
-  color:var(--branco);
+  padding:10px 28px;
+  color:var(--grafite);
 }
 .brand{
+  display:flex;align-items:center;
   font-family:var(--display);
   font-size:1.05rem;
   letter-spacing:.04em;
   line-height:1.1;
 }
-.brand span{color:var(--amarelo);}
+.brand img{height:52px;width:auto;display:block;}
+.brand span{color:var(--vinil);}
 .nav-links{display:flex;gap:28px;font-size:.92rem;font-weight:500;}
-.nav-links a{opacity:.85;transition:opacity .2s;}
-.nav-links a:hover{opacity:1;color:var(--amarelo);}
+.nav-links a{opacity:.85;transition:opacity .2s;color:var(--grafite);}
+.nav-links a:hover{opacity:1;color:var(--vinil);}
 .nav-cta{
   font-family:var(--mono);
   font-size:.82rem;
-  border:1px solid var(--amarelo);
-  color:var(--amarelo);
+  border:1px solid var(--vinil);
+  color:var(--vinil);
   padding:8px 14px;
   border-radius:2px;
   transition:background .2s, color .2s;
 }
-.nav-cta:hover{background:var(--amarelo);color:var(--grafite);}
-.menu-toggle{display:none;background:none;border:0;color:var(--branco);font-size:1.6rem;cursor:pointer;}
+.nav-cta:hover{background:var(--vinil);color:var(--branco);}
+.menu-toggle{display:none;background:none;border:0;color:var(--grafite);font-size:1.6rem;cursor:pointer;}
 
 /* ---------- hero ---------- */
 .hero{
@@ -264,7 +266,7 @@ footer{
   .about-grid{grid-template-columns:1fr;gap:32px;}
   .service-grid{grid-template-columns:1fr;}
   .contact-grid{grid-template-columns:1fr;}
-  .nav-links{position:fixed;top:64px;left:0;right:0;background:var(--grafite);flex-direction:column;padding:20px 28px;gap:16px;transform:translateY(-150%);transition:transform .25s;border-bottom:1px solid rgba(245,183,0,.25);}
+  .nav-links{position:fixed;top:72px;left:0;right:0;background:var(--branco);flex-direction:column;padding:20px 28px;gap:16px;transform:translateY(-150%);transition:transform .25s;border-bottom:1px solid rgba(28,31,34,.1);box-shadow:0 8px 16px rgba(0,0,0,.08);}
   .nav-links.open{transform:translateY(0);}
   .menu-toggle{display:block;}
   .nav-cta{display:none;}
